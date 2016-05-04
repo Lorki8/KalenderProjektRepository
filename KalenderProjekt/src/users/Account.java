@@ -4,6 +4,7 @@ public class Account {
 	public String screenName;
 	private String eMail;
 	private String password;
+	private static final int uniqueIdentifier = 1;
 	public Account(String screenName, String eMail, String password) {
 		super();
 		this.screenName = screenName;

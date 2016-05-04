@@ -1,7 +1,10 @@
 package appointments;
 
 import java.awt.Image;
+import java.util.ArrayList;
 import java.util.Calendar;
+
+import users.Account;
 
 public abstract class Appointment {
 	private Calendar startTime;
@@ -10,7 +13,8 @@ public abstract class Appointment {
 	private String title;
 	private String information;
 	private Image img;
-	
+	private ArrayList<Account> participators;
+	  
 	
 	
 	public Appointment(Calendar startTime, Calendar endTime, boolean remind, String title, String information,
